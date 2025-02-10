@@ -72,13 +72,13 @@ cd bitcoin-trading-bot
 # Windows
 ```bash
 trading_env\Scripts\activate
-python BTC_TradingBot.py
+python BTC_TradingBot.py 
 ```
 
 # macOS
 ```bash
 conda activate trading_env
-python3 BTC_TradingBot.py
+python3 BTC_TradingBot.py (or python BTC_TradingBot.py)
 ```
 
 
