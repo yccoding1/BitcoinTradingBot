@@ -18,41 +18,41 @@ An AI-powered trading bot that predicts Bitcoin price movements using an LSTM mo
 
 ### **Windows Setup**
 
-# Create virtual environment
+**Create virtual environment**
 python -m venv trading_env
 trading_env\Scripts\activate
 
-# Install dependencies
+**Install dependencies**
 pip install tensorflow==2.10.0
 pip install pandas numpy matplotlib scikit-learn yfinance ta
 
-# Verify installation
+**Verify installation**
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices())"
 
 
 ### **MacOS Setup**
-# Install Miniforge (Apple Silicon)
+**Install Miniforge (Apple Silicon)**
 curl -L https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh -o Miniforge3.sh
 bash Miniforge3.sh
 
-# Create environment
+**Create environment**
 conda create -n trading_env python=3.9
 conda activate trading_env
 
-# Install dependencies
+**Install dependencies**
 conda install -c apple tensorflow-deps
 pip install tensorflow-macos==2.10.0 tensorflow-metal==0.6.0
 pip install pandas numpy matplotlib scikit-learn yfinance ta
 
-# Verify GPU acceleration
+**Verify GPU acceleration**
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 
 ## Usage
-# Clone the repository:
+**Clone the repository:**
 git clone https://github.com/yourusername/bitcoin-trading-bot.git
 cd bitcoin-trading-bot
 
-# Run the bot:
+**Run the bot:**
 # Windows
 trading_env\Scripts\activate
 python BTC_TradingBot.py
