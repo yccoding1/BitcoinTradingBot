@@ -74,11 +74,6 @@ python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU')
 ```
 
 ## Usage
-**Clone the repository:**
-```bash
-git clone https://github.com/yourusername/bitcoin-trading-bot.git
-cd bitcoin-trading-bot
-```
 
 # Windows
 **Running Backtest:**
