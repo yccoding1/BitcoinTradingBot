@@ -145,7 +145,6 @@ def log_and_store(name, portfolio, bh_value, timeframe):
     print(f"  Max Drawdown         : {max_dd:.2%}")
     print(f"  Win Rate             : {win_rate:.2%}")
     print(f"  Trade Count          : {trades}")
-    print(f"Buy & Hold starts at {btc_data.index[0]} with price ${close_prices[0]:.2f}")
     results.append({
         "Date": str(date.today()),
         "Agent": name,
