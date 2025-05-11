@@ -80,14 +80,21 @@ git clone https://github.com/yourusername/bitcoin-trading-bot.git
 cd bitcoin-trading-bot
 ```
 
-**Running Bactest:**
 # Windows
+**Running Backtest:**
 ```bash
 trading_env\Scripts\activate
 python backtest_agents.py 
 ```
 
+**Running Live Trading:**
+```bash
+trading_env\Scripts\activate
+python live_trading.py 
+```
+
 # macOS
+**Running Backtest:**
 ```bash
 conda activate trading_env
 python backtest_agents.py
@@ -98,7 +105,6 @@ python backtest_agents.py
 conda activate trading_env #(if not yet in trading_env)
 python live_trading.py
 ```
-
 
 ## Notes
 * CNN-LSTM model is retrained during each backtest run if joblib.dump(scaler, "cnn_scaler.save") and model.save("cnnlstm_model.h5") is not commented out
