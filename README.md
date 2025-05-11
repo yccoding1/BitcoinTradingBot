@@ -38,7 +38,8 @@ trading_env\Scripts\activate
 
 **Install dependencies**
 ```bash
-pip install pandas numpy matplotlib scikit-learn ta ccxt tensorflow stable-baselines3 gym joblib
+pip install tensorflow==2.10.0
+pip install pandas numpy matplotlib scikit-learn ta ccxt stable-baselines3 gym joblib
 ```
 
 **Verify installation**
@@ -97,17 +98,6 @@ python backtest_agents.py
 conda activate trading_env #(if not yet in trading_env)
 python live_trading.py
 ```
-
-## Repository Structure
-bitcoin-trading-bot/
-├── BTC_Agent.py              # Historical backtesting
-├── live_trading.py          # Real-time simulation
-├── lstmcnn.py               # Deep learning agent (CNN-LSTM)
-├── ppo.py                   # PPO RL agent
-├── rules.py                 # Rule-based agents
-├── cnnlstm_model.h5         # Saved CNN-LSTM model 
-├── ppo_model.zip            # Saved PPO model
-└── README.md
 
 
 ## Notes
