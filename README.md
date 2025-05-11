@@ -102,17 +102,13 @@ python live_trading.py
 ```
 
 ## ⚠️ First-Time Backtest Behaviour
-When running the historical backtest (BTC_Agent.py) on a new timeframe for the first time, you may observe that:
-
-CNN-LSTM and PPO agents do not execute any trades.
+When running the historical backtest (backtest_agents.py) on a new timeframe for the first time, you may observe that CNN-LSTM and PPO agents do not execute any trades.
 
 This is expected behaviour due to:
-
 - CNN-LSTM needing a strong predictive signal from historical trends to trigger actions.
 - PPO starting with a randomly initialised policy, especially if no pretrained model (e.g., ppo_model.zip) is loaded.
 
-Recommendation:
-Simply re-run the script for the same timeframe.
+Recommendation: Simply re-run the script for the same timeframe.
 
 ## Disclaimer
 This project is for educational purposes only. It does not constitute financial advice, and live trading involves risk. Backtest performance does not guarantee future results.
