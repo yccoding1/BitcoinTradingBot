@@ -101,12 +101,18 @@ conda activate trading_env #(if not yet in trading_env)
 python live_trading.py
 ```
 
-## Notes
-* CNN-LSTM model is retrained during each backtest run if joblib.dump(scaler, "cnn_scaler.save") and model.save("cnnlstm_model.h5") is not commented out
-* PPO is trained using a custom OpenAI Gym environment.
-* Technical indicators include RSI, SMA, and Bollinger Bands from ta library.
-* Buy & Hold baseline is included in every comparison in historical backtesting. 
-* To simulate realistic volatility responses, Bollinger Bands and RSI window sizes are adjusted dynamically.
+## ⚠️ First-Time Backtest Behaviour
+When running the historical backtest (BTC_Agent.py) on a new timeframe for the first time, you may observe that:
+
+CNN-LSTM and PPO agents do not execute any trades.
+
+This is expected behaviour due to:
+
+- CNN-LSTM needing a strong predictive signal from historical trends to trigger actions.
+- PPO starting with a randomly initialised policy, especially if no pretrained model (e.g., ppo_model.zip) is loaded.
+
+Recommendation:
+Simply re-run the script for the same timeframe.
 
 ## Disclaimer
 This project is for educational purposes only. It does not constitute financial advice, and live trading involves risk. Backtest performance does not guarantee future results.
