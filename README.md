@@ -1,4 +1,4 @@
-# MultiAgentBitcoinTradingBot
+# BitcoinTradingBot
 
 # Multi-Agent Bitcoin Trading System
 
