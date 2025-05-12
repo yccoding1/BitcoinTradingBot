@@ -101,6 +101,21 @@ conda activate trading_env #(if not yet in trading_env)
 python live_trading.py
 ```
 
+### File Overview
+
+| File | Description |
+|------|-------------|
+| `backtest_agents.py` | Main script to run historical backtests using CNN-LSTM, PPO, and rule-based agents. |
+| `cnn_lstm_agent.py` | Contains the CNN-LSTM model architecture and trading simulation logic. |
+| `ppo_agent.py` | Implements the Proximal Policy Optimization (PPO) reinforcement learning agent. |
+| `rule_based_agents.py` | Defines agents with rule-based strategies using RSI, SMA Crossover, and Bollinger Bands. |
+| `live_trading.py` | Simulates real-time multi-agent trading using the latest BTC/USDT data from Binance. |
+| `cnnlstm_model.h5` | Trained CNN-LSTM model saved for reuse in live trading. |
+| `cnn_scaler.save` | Scaler used to normalise CNN-LSTM inputs for consistent live predictions. |
+| `ppo_model.zip` | Trained PPO model saved for reuse or evaluation. |
+
+
+
 ## ⚠️ First-Time Backtest Behaviour
 When running the historical backtest (backtest_agents.py) on a new timeframe for the first time, you may observe that CNN-LSTM and PPO agents do not execute any trades.
 
