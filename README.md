@@ -128,6 +128,10 @@ Recommendation: Simply re-run the script for the same timeframe.
 ## Disclaimer
 This project is for educational purposes only. It does not constitute financial advice, and live trading involves risk. Backtest performance does not guarantee future results.
 
+## Source Code
+The complete project source code is made available here:  
+🔗 [GitHub Repository](https://github.com/yccoding1/BitcoinTradingBot)
+
 
 
 
